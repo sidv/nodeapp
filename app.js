@@ -19,6 +19,12 @@ app.put("/changeemail",(req,res) =>{
 })
 
 
+app.get("/getalluser",(req,res) =>{
+        res.send(JSON.stringify(users))
+})
+
+
+
 app.put("/changeusername",(req,res) =>{
 	users.forEach((item) =>{
 		if(item.id == req.body.id){
