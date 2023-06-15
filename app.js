@@ -20,6 +20,7 @@ app.put("/changeemail",(req,res) =>{
 
 
 app.get("/getalluser",(req,res) =>{
+	console.log(users)
         res.send(JSON.stringify(users))
 })
 
